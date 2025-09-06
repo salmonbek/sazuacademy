@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%); // biroz qoraroq
+    filter: brightness(100%); // biroz qoraroq
     z-index: -2;
   }
 
@@ -37,15 +37,18 @@
 
   .hero-left {
     flex: 1;
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
+
     p {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       max-width: 500px;
     }
+
     .hero-btn {
       padding: 0.8rem 1.5rem;
       background: #007bff;
@@ -67,6 +70,7 @@
     padding: 40px 60px;
     border-radius: 10px;
     border: 1px solid white;
+
     img.student {
       width: 350px;
       max-width: 100%;
@@ -86,6 +90,7 @@ form {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+
   input {
     padding: 10px;
     width: 300px;
@@ -94,11 +99,17 @@ form {
     background: transparent;
     border: 3px solid white;
     outline: none;
+    color: white; // yozilgan matn rangi
   }
+
   .send-btn {
     padding: 10px 120px;
     border-radius: 10px;
   }
+}
+
+input[placeholder] {
+  color: white;
 }
 
 @media (max-width: 725px) {
@@ -106,6 +117,7 @@ form {
     flex-direction: column;
     text-align: center;
   }
+
   .hero-right {
     padding: 30px 20px;
   }

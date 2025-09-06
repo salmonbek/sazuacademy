@@ -1,0 +1,42 @@
+.footer {
+  background-color: rgb(14, 52, 53);
+  color: white;
+  padding: 1rem 0;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .footer-icons {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #00bcd4; // hoverda ko'k rang
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
